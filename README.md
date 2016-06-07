@@ -77,6 +77,10 @@ It would be cool to leave some nodes running this publicly, in a well known and
 identified public place. This is just an idea so far. I'm waiting to receive
 more ESP8266s before I can test out the idea more thoroughly.
 
+You must design not just the experience of using your product (art piece or
+whatever it ends up being), but also the way it interacts with the environment
+around it. Please think carefully before starting.
+
 ### Bill of Materials
 
 You don't need any outbound internet connectivity, so that's a nice time saver.
@@ -87,16 +91,25 @@ The difficult-to-source Wemos D1 Mini may be a better board to use because of
 its smaller footprint and easier stacking with other boards/shields. I haven't
 had a chance to use it yet.
 
+Some ESP8266 boards allow you to connect an external wifi antenna, but not most
+of them. Consider if you need this feature or not. I would suggest the range is
+OK out of the box with the internal antenna. ESP-12F, a recent variant, is said
+to have a better antenna.
+
 I've had some good luck so far with this 20,000mAh USB solar battery charger. I need to put it through its paces more
 intelligently. [ZeroLemon SolarJuice 20k mAh solar battery charger](http://www.amazon.com/ZeroLemon-SolarJuice-20000mAh-Portable-Technology/dp/B00NIOGKL8)
 
 You'll want to find a way to shape it and install it in the installation space.
-I've had good luck with InstaMorph so far in terms of shaping a tough
-enclosure. I'd probably attach it to the object with [2"
-CastTape](http://www.amazon.com/CASTtape-Strength-Automotive-Plumbing-Emergency/dp/B01A6DSVBU?ie=UTF8&psc=1&redirect=true&ref_=oh_aui_detailpage_o00_s01),
-a carbon fiber product that works similar to Duct Tape - but far more messy.
-Also be warned that CF can inhibit RF signals (wifi range!) and trap heat, so
-use with care, and avoid the antenna area. 
+Do you need to worry about vandalism and abuse?
+
+For the enclosure itself, I've had good luck with InstaMorph so far in terms of
+shaping a tough box to mount things in. It dries pretty strong and you can
+reheat and reshape bits as neededed. Plus it's cheap and nontoxic. 
+
+To attach to its mounting point (where you decide it to be), I might consider
+[CastTape](http://www.amazon.com/CASTtape-Strength-Automotive-Plumbing-Emergency/dp/B01A6DSVBU?ie=UTF8&psc=1&redirect=true&ref_=oh_aui_detailpage_o00_s01),
+a carbon fiber product that works similar to Duct Tape - but far more messy, and of course stronger by weight than steel.
+Be warned that CF can inhibit RF signals (wifi range!) and trap heat, so use with care, and avoid enclosing the antenna area.
 
 For outdoor use you should consider products that inhibit moisture. Luckily this is a well known problem in electronics. My first thought would be 
 some combination of:
