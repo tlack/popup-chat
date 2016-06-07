@@ -73,6 +73,10 @@ Edit the configuration at the top of the .ino file and upload it to your 8266. T
 
 ## Provenance/License
 
+Much of the concepts behind this were hashed out with B. Lee (TX), whose blue
+skies screed infected me in a heady manner. Thanks to Gil C. (FL) for help
+understanding Arduino. 
+
 MIT license. Based on Captive Portal by M. Ray Burnette 20150831. 
 
 Built at [Building.co](http://building.co) in Miami, FL.
