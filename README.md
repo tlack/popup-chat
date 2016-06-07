@@ -71,6 +71,47 @@ I used Arduino to make this, but I'd like to rebuild it with NodeMCU.
 
 Edit the configuration at the top of the .ino file and upload it to your 8266. That's about all it should take.
 
+## Building public PopupChat nodes
+
+It would be cool to leave some nodes running this publicly, in a well known and
+identified public place. This is just an idea so far. I'm waiting to receive
+more ESP8266s before I can test it.
+
+### Bill of Materials
+
+I used the [Elecrow ESP8266 IoT board](http://www.amazon.com/Elecrow-ESP8266-Module-Battery-Charging/dp/B01DEQI4W2).
+
+I've had some good luck so far with this 20,000mAh USB solar battery charger. I need to put it through its paces more
+intelligently. [ZeroLemon SolarJuice 20k mAh solar battery charger](http://www.amazon.com/ZeroLemon-SolarJuice-20000mAh-Portable-Technology/dp/B00NIOGKL8)
+
+You'll want to find a way to shape it and install it in the installation space.
+I've had good luck with InstaMorph so far in terms of shaping a tough
+enclosure. I'd probably attach it to the object with [2"
+CastTape](http://www.amazon.com/CASTtape-Strength-Automotive-Plumbing-Emergency/dp/B01A6DSVBU?ie=UTF8&psc=1&redirect=true&ref_=oh_aui_detailpage_o00_s01),
+a carbon fiber product that works similar to Duct Tape - but far more messy.
+Also be warned that CF can inhibit RF signals (wifi range!) and trap heat, so
+use with care, and avoid the antenna area. 
+
+For outdoor use you should consider products that inhibit moisture. Luckily this is a well known problem in electronics. My first thought would be 
+some combination of:
+
+- "Liquid electrical tape" compounds like 
+- a few coats of [PlastiDip](http://www.amazon.com/Performix-11218-Multi-Purpose-Coating-Aerosol/dp/B008PO6368). It's available in many colors, and a clear
+  variant, but I suggest you make your product's presence known in the conscious environment of the public space where it lives because that's the right thing
+	to do. PlastiDip also lends a nice, comfortable materiality to surfaces on which it's applied.
+- Final top coat of [NeverWet](http://www.amazon.com/Oleum-274232-Never-Multi-Purpose/dp/B00DNQBFAW), which I confess to not having worked with.
+
+### Concerns with public installations
+
+I've had some random reboots using solar battery chargers. Even when it's just
+slightly cloudy. More research required.
+
+It would be best to have NodeMCU running on these public nodes so that you can
+remotely connect and debug them. It will be almost impossible to re-connect a
+serial terminal to these when problems develop.
+
+Do not intrude on the privacy of others.
+
 ## Provenance/License
 
 Much of the concepts behind this were hashed out with B. Lee (TX), whose blue
