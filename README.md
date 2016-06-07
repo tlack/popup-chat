@@ -75,11 +75,17 @@ Edit the configuration at the top of the .ino file and upload it to your 8266. T
 
 It would be cool to leave some nodes running this publicly, in a well known and
 identified public place. This is just an idea so far. I'm waiting to receive
-more ESP8266s before I can test it.
+more ESP8266s before I can test out the idea more thoroughly.
 
 ### Bill of Materials
 
-I used the [Elecrow ESP8266 IoT board](http://www.amazon.com/Elecrow-ESP8266-Module-Battery-Charging/dp/B01DEQI4W2).
+You don't need any outbound internet connectivity, so that's a nice time saver.
+
+I used the [Elecrow ESP8266 IoT
+board](http://www.amazon.com/Elecrow-ESP8266-Module-Battery-Charging/dp/B01DEQI4W2).
+The difficult-to-source Wemos D1 Mini may be a better board to use because of
+its smaller footprint and easier stacking with other boards/shields. I haven't
+had a chance to use it yet.
 
 I've had some good luck so far with this 20,000mAh USB solar battery charger. I need to put it through its paces more
 intelligently. [ZeroLemon SolarJuice 20k mAh solar battery charger](http://www.amazon.com/ZeroLemon-SolarJuice-20000mAh-Portable-Technology/dp/B00NIOGKL8)
@@ -95,7 +101,7 @@ use with care, and avoid the antenna area.
 For outdoor use you should consider products that inhibit moisture. Luckily this is a well known problem in electronics. My first thought would be 
 some combination of:
 
-- "Liquid electrical tape" compounds like 
+- "Liquid electrical tape" compounds like [Gardner's](http://www.amazon.com/Gardner-Bender-LTB-400-4-Ounce-Electrical/dp/B000FPAN2K).
 - a few coats of [PlastiDip](http://www.amazon.com/Performix-11218-Multi-Purpose-Coating-Aerosol/dp/B008PO6368). It's available in many colors, and a clear
   variant, but I suggest you make your product's presence known in the conscious environment of the public space where it lives because that's the right thing
 	to do. PlastiDip also lends a nice, comfortable materiality to surfaces on which it's applied.
